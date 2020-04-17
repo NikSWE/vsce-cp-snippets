@@ -17,6 +17,9 @@
       }
     ]
   },
+  "scripts": {
+    "deploy": "vsce publish --yarn"
+  },
   "devDependencies": {
     "vsce": "^1.75.0"
   }
