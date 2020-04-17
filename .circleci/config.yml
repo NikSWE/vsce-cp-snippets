@@ -11,32 +11,11 @@ jobs:
       - run:
           name: "Deploy to extension marketplace."
           command: yarn deploy -p ${VSCODE_MARKETPLACE_TOKEN}
-  
-  release:
-    docker:
-      - image: circleci/golang:latest
-    steps:
-      - run:
-          name: "Install github release tool."
-          command: go get github.com/tcnksm/ghr
-      - run:
-          name: "Create release on Github."
-          command: |
-            VERSION=$(cat package.json | grep "version" | cut -d ":" -f 2 | tr -d '[:space:]' | sed 's/[",]//g' | sed 's/.*/v\0/')
-            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION}
 
 workflows:
   main:
     jobs:
       - deploy:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v.*/
-      - release:
-          requires:
-            - deploy
           filters:
             branches:
               ignore: /.*/
