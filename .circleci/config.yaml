@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Deploy to extension marketplace.
+          name: "Deploy to extension marketplace."
           command: yarn deploy -p ${VSCODE_MARKETPLACE_TOKEN}
   
   release:
