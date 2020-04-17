@@ -1,0 +1,20 @@
+{
+    "name": "vsce-cp-snippets",
+    "displayName": "Competitive Programming Snippets",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
