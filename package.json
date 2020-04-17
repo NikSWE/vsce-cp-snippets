@@ -16,5 +16,8 @@
         "path": "./snippets/cpp.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^1.75.0"
   }
 }
