@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Install vsce tool."
+          command: yarn install --ignore-engines
+      - run:
           name: "Deploy to extension marketplace."
           command: yarn deploy -p ${VSCODE_MARKETPLACE_TOKEN}
   
