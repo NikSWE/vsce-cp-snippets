@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   deploy:
     docker: 
@@ -23,7 +23,6 @@ jobs:
             ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION}
 
 workflows:
-  version: 2
   main:
     jobs:
       - deploy:
