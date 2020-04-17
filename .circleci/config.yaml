@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  deploy:
+    docker: 
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run:
+          name: Deploy to extension marketplace.
+          command: yarn deploy -p ${VSCODE_MARKETPLACE_TOKEN}
+
+workflows:
+  main:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+            tags:
+              only: /^v.*/
