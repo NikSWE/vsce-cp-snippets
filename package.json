@@ -3,7 +3,7 @@
   "publisher": "muj-programmer",
   "displayName": "Competitive Programming Snippets",
   "description": "Improves your competitive programming experience.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.44.0"
   },

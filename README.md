@@ -9,6 +9,7 @@ This extension makes the transition from pseudocode to implementation a breeze.
 | Snippet | Purpose                      |
 | ------- | ---------------------------- |
 | cpst    | creates quick start template |
+| cptc    | input test cases             |
 
 ## Contributing
 
