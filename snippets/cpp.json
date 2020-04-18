@@ -20,5 +20,18 @@
       "}"
     ],
     "description": "Creates a quick start template"
+  },
+  "Input test cases": {
+    "prefix": "cptc",
+    "body": [
+      "int ${1:t};",
+      "cin >> ${1:t};",
+      "",
+      "while(${1:t}--)",
+      "{",
+      "   ${2:// code goes here}",
+      "}"
+    ],
+    "description": "Input test cases"
   }
 }
