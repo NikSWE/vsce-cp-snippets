@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.3]
+
+## Added
+
+- Icon for extension
+
 ## [0.0.2]
 
 ### Added
