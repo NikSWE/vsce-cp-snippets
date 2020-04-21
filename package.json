@@ -2,7 +2,6 @@
   "name": "vsce-cp-snippets",
   "publisher": "muj-programmer",
   "displayName": "Competitive Programming Snippets",
-  "icon": "icon.png",
   "description": "Improves your competitive programming experience.",
   "version": "0.0.2",
   "engines": {
