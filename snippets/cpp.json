@@ -38,10 +38,6 @@
   "Segment Tree(Lazy)": {
     "prefix": "segment_tree",
     "body": [
-      "#include<iostream>",
-      "",
-      "using namespace std;",
-      "",
       "class SegmentTree {",
       "  public:",
       "    int* arr;",
@@ -114,7 +110,13 @@
       "    }",
       "",
       "    ",
-      "",
+      "    /* Update operation.",
+      "      *  Uses lazy_update to update the current subtree.",
+      "      *",
+      "      *  @param (data_type) update_val",
+      "      *  @param int query_start: inclusive starting index of target range",
+      "      *  @param int query_end: inclusive ending index of target range",
+      "    */",
       "    void update(${1:int} update_val, int query_start, int query_end) {",
       "      if(lazy_status)",
       "        propogate();",
@@ -156,6 +158,6 @@
       "    }",
       "};"
     ],
-    "description": ""
+    "description": "Creates Segment Tree with Lazy Propogation"
   }
 }
