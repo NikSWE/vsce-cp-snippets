@@ -1,3 +1,5 @@
+UPD: This project was fun, but sadly I haven't gotten the time to add more snippets as I have taken a break from competitive programming. Feel free to fork this repo and add your own snippets. Happy coding!
+
 # Competitive Programming Snippets
 
 This extension makes the transition from pseudocode to implementation a breeze.
